@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="component-event">
+        <div :style="{fontSize:postFontSize+'em'}">
+            <!-- <blog-post v-for="post in posts" :key="post.id" :title="post.title" @enlarge-text="postFontSize+=0.1"></blog-post> -->
+            <!-- <blog-post v-for="post in posts" :key="post.id" :title="post.title" @enlarge-text="postFontSize+=$event"></blog-post> -->
+            <blog-post v-for="post in posts" :key="post.id" :title="post.title" @enlarge-text="onEnlargeText"></blog-post>
+        </div>
+    </div>
+    <script src="../scripts/component-event.js"></script>
+</body>
+
+</html>

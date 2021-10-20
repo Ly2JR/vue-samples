@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <link href="../css/dynamic-component.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="dynamic-component" class="demo">
+        <button v-for="tab in tabs" v-bind:key="tab" v-bind:class="['tab-button',{active:currentTab===tab}]" v-on:click="currentTab=tab">
+                {{tab}}
+            </button>
+        <component v-bind:is="currentTabComponent" class="tab">
+
+        </component>
+    </div>
+    <script src="../scripts/dynamic-component.js"></script>
+</body>
+
+</html>

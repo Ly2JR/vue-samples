@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="model-textarea">
+        <span>Multiline message is:</span>
+        <p style="white-space:pre-line;">{{message}}</p>
+        <br/>
+        <textarea v-model="message" placeholder="add multiple lines"></textarea>
+    </div>
+    <script src="../scripts/model-textarea.js"></script>
+</body>
+
+</html>

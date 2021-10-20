@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="custom-input">
+        <custom-input :model-value="searchText" @update:model-value="searchText=$event"></custom-input>
+    </div>
+    <script src="../scripts/custom-input.js"></script>
+</body>
+
+</html>

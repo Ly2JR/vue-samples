@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="inline-handler">
+        <!--内联处理器中的方法-->
+        <button @click="say('hi')">Say hi</button>
+        <button @click="say('what')">Say what</button>
+
+        <br>
+        <!--内联语句处理器中访问原始DOM事件-->
+        <button @click="warn('Form cannot be submitted yet.',$event)">Submit</button>
+
+        <br>
+        <!--多事件处理器-->
+        <button @click="one($event),two($event)">Submit</button>
+    </div>
+    <script src="../scripts/inline-handler.js"></script>
+</body>
+
+</html>

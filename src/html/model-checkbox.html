@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="model-checkbox">
+        <input type="checkbox" id="checkbox" v-model="checked" />
+        <label for="checkbox">{{checked}}</label>
+
+        <br/>
+        <input type="checkbox" id="checkbox-toggle" v-model="checkedToggle" true-value="yes" false-value="no" />
+        <label for="checkbox-toggle">{{checkedToggle}}</label>
+
+        <br/>
+        <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+        <label for="jack">Jacl</label>
+        <input type="checkbox" id="jack" value="John" v-model="checkedNames">
+        <label for="John">John</label>
+        <input type="checkbox" id="jack" value="Mike" v-model="checkedNames">
+        <label for="Mike">Mike</label>
+        <br/>
+        <span>Checked names:{{checkedNames}}</span>
+    </div>
+    <script src="../scripts/model-checkbox.js"></script>
+</body>
+
+</html>

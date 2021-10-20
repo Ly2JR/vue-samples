@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="model-basic">
+        <input v-model="message" placeholder="edit mes" />
+        <p>Message is:{{message}}</p>
+
+        <br/>
+
+        <input v-model.lazy="messageLazy" placeholder="edit mes" />
+        <p>Message Lazy is:{{messageLazy}}</p>
+
+        <br/>
+        <input v-model.number="age" type="number" />
+        <p>number is:{{age}}</p>
+
+        <br/>
+        <input v-model.trim="name" placeholder="edit name" />
+        <p>remove space name is:{{name}}</p>
+
+
+    </div>
+    <script src="../scripts/model-basic.js"></script>
+</body>
+
+</html>

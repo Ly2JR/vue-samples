@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="model-select">
+        <select v-model="selected">
+            <option disabled value="">Please select on</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <span>Selected:{{selected}}</span>
+
+        <br/>
+        <select v-model="multSelected" multiple>
+            <option disabled value="">Please mult-select on</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <span>Selected:{{multSelected}}</span>
+
+        <br/>
+        <select v-model="dynamicSelected" @change="selectChange">
+            <option :value="dynamicValue">123</option>
+        </select>
+    </div>
+    <script src="../scripts/model-select.js"></script>
+</body>
+
+</html>
