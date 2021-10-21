@@ -1,5 +1,5 @@
 /* jslint esversion:6 */
-const ListRender = {
+const ListRenderApp = {
     data() {
         return {
             todos: [
@@ -11,4 +11,4 @@ const ListRender = {
     },
 };
 
-Vue.createApp(ListRender).mount('#list-rendering');
+Vue.createApp(ListRenderApp).mount('#list-rendering');

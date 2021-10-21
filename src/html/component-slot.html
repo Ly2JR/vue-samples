@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <link href="../css/fontawesome-free6/fontawesome.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="component-slot">
+        <todo-list>
+            <template v-slot:default="slotProps">
+                <i class="fas fa-check"></i>
+                <span class="green">{{slotProps.item}}</span>
+            </template>
+        </todo-list>
+    </div>
+    <script src="../scripts/component-slot.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 /* jshint esversion:6 */
-const IfElseTemplate = {
+const IfElseTemplateApp = {
     data() {
         return {
             ok: true
@@ -7,5 +7,5 @@ const IfElseTemplate = {
     },
 };
 
-const app = Vue.createApp(IfElseTemplate);
+const app = Vue.createApp(IfElseTemplateApp);
 app.mount('#if-else-template');

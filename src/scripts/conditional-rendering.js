@@ -1,9 +1,9 @@
 /*jshint esversion:6 */
-const ConditionalRender = {
+const ConditionalRenderApp = {
     data() {
         return {
             seen: false
         };
     },
 };
-Vue.createApp(ConditionalRender).mount('#conditional-rendering');
+Vue.createApp(ConditionalRenderApp).mount('#conditional-rendering');

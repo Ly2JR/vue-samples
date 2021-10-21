@@ -1,5 +1,5 @@
 /* jshint esversion:6 */
-const TodoList = {
+const TodoListApp = {
     data() {
         return {
             groceryList: [
@@ -15,7 +15,7 @@ const TodoList = {
     },
 };
 
-const app = Vue.createApp(TodoList);
+const app = Vue.createApp(TodoListApp);
 
 app.component('todo-item', {
     props: ['todo'],

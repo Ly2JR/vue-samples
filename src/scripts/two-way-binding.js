@@ -1,9 +1,9 @@
 /* jshint esversion:6 */
-const TwoWayBinding = {
+const TwoWayBindingApp = {
     data() {
         return {
             message: 'Hello Vue!'
         };
     },
 };
-Vue.createApp(TwoWayBinding).mount('#two-way-binding');
+Vue.createApp(TwoWayBindingApp).mount('#two-way-binding');

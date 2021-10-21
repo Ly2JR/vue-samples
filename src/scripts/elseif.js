@@ -1,6 +1,6 @@
 /* jshint esversion:6 */
 
-const ElseIf = {
+const ElseIfApp = {
     data() {
         return {
             type: 'D'
@@ -8,4 +8,4 @@ const ElseIf = {
     },
 };
 
-Vue.createApp(ElseIf).mount('#else-if');
+Vue.createApp(ElseIfApp).mount('#else-if');

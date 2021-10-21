@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="component-model">
+        <p>First name:{{firstName}}</p>
+        <p>Last name:{{lastName}}</p>
+        <user-name v-model:first-name="firstName" v-model:last-name="lastName"></user-name>
+    </div>
+    <script src="../scripts/component-model.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <link href="../css/coordinate.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="coordinate">
+        <div @mousemove="xCoordinate" :style="{backgroundColor:`hsl(${x},80%,50%)`}" class="movearea">
+
+            <h3>Move your mouse acroos the scrren...</h3>
+            <p>x:{{x}}</p>
+        </div>
+    </div>
+    <script src="../scripts/coordinate.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 /* jshint esversion:6 */
-const AttributeBinding = {
+const AttributeBindingApp = {
     data() {
         return {
             message: 'You loaded this page on ' + new Date().toLocaleString()
@@ -7,4 +7,4 @@ const AttributeBinding = {
     },
 };
 
-Vue.createApp(AttributeBinding).mount('#bind-attribute');
+Vue.createApp(AttributeBindingApp).mount('#bind-attribute');

@@ -1,6 +1,6 @@
 /* jshint esversion:6 */
 
-const EventHandling = {
+const EventHandlingApp = {
     data() {
         return {
             message: 'Hello Vue.js!'
@@ -13,4 +13,4 @@ const EventHandling = {
     },
 };
 
-Vue.createApp(EventHandling).mount('#event-handling');
+Vue.createApp(EventHandlingApp).mount('#event-handling');
