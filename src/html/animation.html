@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <link href="../css/animation.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="animation">
+        <button @click="show=!show">
+            Toggle show
+        </button>
+        <transition name="bounce">
+            <p v-if="show">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis enim libero, at lacinia diam fermentum id. Pellentesque habitant morbi tristique senectus et netus.
+            </p>
+        </transition>
+    </div>
+    <script src="../scripts/animation.js"></script>
+</body>
+
+</html>

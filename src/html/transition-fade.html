@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <link href="../css/transition-fade.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="transition-fade">
+        <button @click="show=!show">
+            Toggle
+        </button>
+        <transition name="fade">
+            <p v-if="show">Hello Vue!</p>
+        </transition>
+    </div>
+    <script src="../scripts/transition-fade.js"></script>
+</body>
+
+</html>

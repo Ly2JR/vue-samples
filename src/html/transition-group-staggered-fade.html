@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <link href="../css/transition-group-staggered-list.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+</head>
+
+<body>
+    <div id="transition-group-staggered-list">
+        <input v-model="query" />
+        <transition-group name="staggered-fade" tag="ul" :css="false" @before-enter="beforeEnter" @enter="enter" @leave="leave">
+            <li v-for="(item, index) in computedList" :key="item.msg" :data-index="index">
+                {{item.msg}}
+            </li>
+        </transition-group>
+    </div>
+    <script src="../scripts/transition-group-staggered-list.js"></script>
+</body>
+
+</html>

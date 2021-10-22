@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <link href="../css/transition-mode-fade2.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="transition-mode-fade">
+        <transition name="no-mode-fade">
+            <button v-if="on" key="on" @click="on=false">
+                on
+            </button>
+            <button v-else key="off" @click="on=true">
+                off
+            </button>
+        </transition>
+    </div>
+    <script src="../scripts/transition-mode-fade.js"></script>
+</body>
+
+</html>

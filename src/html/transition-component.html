@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <link href="../css/transition-component.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="transition-component" class="demo">
+        <input v-model="view" type="radio" value="v-a" id="a"><label for="a">A</label>
+        <input v-model="view" type="radio" value="v-b" id="b"><label for="b">B</label>
+        <transition name="component-fade" mode="out-in">
+            <component :is="view"></component>
+        </transition>
+    </div>
+    <script src="../scripts/transition-component.js"></script>
+</body>
+
+</html>

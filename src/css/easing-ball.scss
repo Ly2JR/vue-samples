@@ -1,0 +1,79 @@
+@import "compass/css3";
+html {
+    background: #222;
+}
+
+.container {
+    width: 500px;
+    margin: 10px auto;
+    border: 1px solid #333;
+    height: 280px;
+    background: #111;
+    overflow: hidden;
+}
+
+.unit {
+    float: left;
+    width: 249px;
+    height: 280px;
+    background-color: #222426; // Old browsers
+    @include filter-gradient(#222426, #111111, horizontal); // IE6-9 fallback on horizontal gradient
+    @include background-image(radial-gradient(center, ellipse cover, #222426 0%, #111111 100%));
+    &:first-child {
+        border-right: 1px solid #333;
+    }
+}
+
+.overlay {
+    position: absolute;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/grain.png");
+    top: 10px;
+    width: 500px;
+    height: 280px;
+    left: 50%;
+    margin-left: -250px;
+    z-index: 1000;
+    opacity: 0.11;
+    animation: filmgrain 0.4s steps(3) infinite;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #959595; // Old browsers
+    @include filter-gradient(#959595,
+    #494949,
+    horizontal); // IE6-9 fallback on horizontal gradient
+    @include background-image(radial-gradient(center, ellipse cover, #959595 0%, #4e4e4e 79%, #494949 100%));
+    transform: translateZ(0);
+    margin: 30px auto;
+    position: relative;
+    z-index: 300;
+}
+
+.ball-shadow {
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    border-radius: 50%;
+    background: #000;
+    top: 280px;
+    margin-left: 100px;
+    z-index: 2;
+    opacity: 0;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    animation: boom 1.6s 0.7s ease-in-out infinite;
+}
+
+@keyframes boom {
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes filmgrain {
+    100% {
+        background-position: 200% 0%;
+    }
+}

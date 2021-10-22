@@ -1,0 +1,37 @@
+body {
+    margin: 30px;
+}
+
+#demo {
+    position: relative;
+}
+
+button {
+    position: absolute;
+}
+
+.no-mode-fade-enter-active,
+.no-mode-fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.no-mode-fade-enter-from,
+.no-mode-fade-leave-to {
+    opacity: 0;
+}
+
+button {
+    background: #05ae7f;
+    border-radius: 4px;
+    display: inline-block;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
