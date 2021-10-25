@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="dynamic-arguments">
+        <h2>Scroll down the page</h2>
+        <input type="range" min="0" max="500" v-model="pinPadding">
+        <p v-pin:[direction]="pinPadding">Stick me {{pinPadding+'px'}} from the {{direction}} of the page</p>
+    </div>
+    <script src="../scripts/dynamic-arguments.js"></script>
+</body>
+
+</html>

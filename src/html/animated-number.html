@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <link href="../css/animation.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+</head>
+
+<body>
+    <div id="animated-number">
+        <input v-model.number="number" type="number" step="20" />
+        <p>{{animatedNumber}}</p>
+    </div>
+    <script src="../scripts/animated-number.js"></script>
+</body>
+
+</html>

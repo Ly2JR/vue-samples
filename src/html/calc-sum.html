@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+</head>
+
+<body>
+    <div id="calc-sum">
+        <input v-model.number="firstNumber" type="number" step="20" />+
+        <input v-model.number="secondNumber" type="number" step="20" />={{result}}
+        <p>
+            <animated-integer :value="firstNumber"></animated-integer>+
+            <animated-integer :value="secondNumber"></animated-integer>=
+            <animated-integer :value="result"></animated-integer>
+        </p>
+    </div>
+    <script src="../scripts/calc-sum.js"></script>
+</body>
+
+</html>
